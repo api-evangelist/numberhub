@@ -1,29 +1,74 @@
 aid: numberhub
 name: NumberHub
-description: 'NumberHub is a company surfaced via the API Evangelist harvest backlog (source: new-submission)
-  and added to the network as a stub for full-pipeline profiling.'
+image: https://numberhub.io/og.jpg
+description: NumberHub provides a REST API for a prepaid USD wallet offering SMS verification numbers, number rentals, travel eSIM data plans,
+  email OTP services, and residential proxy data packages. The platform enables developers to programmatically order numbers, rent eSIMs, send
+  OTPs via SMS or email, and access proxy endpoints, with pricing and catalog updates reflected in real time. It supports idempotent operations
+  via Idempotency-Key and detailed retry semantics for action endpoints.
 url: https://raw.githubusercontent.com/api-evangelist/numberhub/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:new-submission
-x-tier: stub
-x-tier-reason: harvest
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-28 (modular-v1; was harvest)
 specificationVersion: '0.20'
 created: '2026-09-28'
 modified: '2026-09-28'
 tags:
-- Company
-apis: []
+- Telecom
+- API
+- SMS Verification
+- eSIM
+- Residential Proxies
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: ChangeLog
+  url: changelog/numberhub-changelog.yml
+- type: Conformance
+  url: conformance/numberhub-conformance.yml
+- type: LLMsTxt
+  url: llms/numberhub-llms.txt
+- type: Hosts
+  url: hosts/numberhub-hosts.yml
+- type: Vendors
+  url: vendors/numberhub-vendors.yml
+- type: TermsOfService
+  url: https://numberhub.io/terms/
+- type: StatusPage
+  url: https://numberhub.io/status/
+- type: Security
+  url: https://numberhub.io/security/
+- type: PrivacyPolicy
+  url: https://numberhub.io/privacy/
+- type: Pricing
+  url: https://numberhub.io/pricing/
+- type: Login
+  url: https://numberhub.io/app/login/
+- type: ChangeLog
+  url: https://numberhub.io/changelog/
+- type: VulnerabilityDisclosure
+  url: security/numberhub-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/numberhub-domain-security.yml
 - type: Website
   url: https://numberhub.io/
 - type: Documentation
   url: https://numberhub.io/api-docs/
-x-submission-notes: SMS verification numbers, rentals, travel eSIMs, email OTP, residential proxies. OpenAPI
-  3.1 https://numberhub.io/openapi.json
+apis:
+- name: NumberHub API
+  description: REST API for prepaid wallet, SMS verification, number rentals, eSIMs, email OTP and residential proxies.
+  humanURL: https://numberhub.io/api-docs/
+  baseURL: https://api.numberhub.io/v1
+  aid: numberhub:numberhub-api
+x-submission-notes: SMS verification numbers, rentals, travel eSIMs, email OTP, residential proxies. OpenAPI 3.1 https://numberhub.io/openapi.json
 x-submission-probe: root 200, invented path 404, api-docs 200, OpenAPI 3.1 200 (44 paths)
 x-submitted-by: info@numberhub.io (apis.io/add, 2026-09-28)
+x-enrichment:
+  date: '2026-09-28'
+  status: enriched
+  artifacts_added: 12
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

@@ -1,0 +1,43 @@
+generated: '2026-09-28'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://numberhub.io/changelog/
+sources:
+- https://numberhub.io/changelog/
+entries:
+- breaking: false
+  highlights:
+  - Product, translation and API consistency
+  - Clarified rental cancellation eligibility and removed obsolete early-termination wording across public translations.
+  - Corrected proxy pricing examples, removed unsupported signup claims and added rental requests to Postman.
+  - Added measured status-history support with explicit unknown and partial-coverage states.
+  date: '2026-09-08'
+- breaking: true
+  highlights:
+  - Rental and country navigation
+  - Rentals now run for their purchased period; the early-finish action is retired.
+  - Restored country and language flags using image-based icons.
+  date: '2026-09-07'
+- breaking: false
+  highlights:
+  - SEO and compliance review
+  - Removed unsupported delivery and acceptance promises from public marketing copy.
+  - Improved country-name grammar, trust disclosures, and localized delivery-time text.
+  - Added clearer editorial provenance and review dates to guides.
+  date: '2026-07-30'
+- breaking: false
+  highlights:
+  - Country search presentation
+  - Corrected country-page titles across all supported locales.
+  - Reduced brand-query overlap between About pages and the homepage.
+  - Added a visible order code-window countdown in the web app.
+  date: '2026-07-29'
+- breaking: false
+  highlights:
+  - Sitemap reliability
+  - Changed sitemap last-modified dates to follow real source history instead of deployment time.
+  - Improved top-up reconciliation messaging when the credited amount differs from the invoice.
+  date: '2026-07-28'
+current_version: '2026-09-08'
+note: Only entries listed on the page are included; up to 12 recent entries are provided.
+docs: https://numberhub.io/changelog/

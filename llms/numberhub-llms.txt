@@ -1,0 +1,43 @@
+# NumberHub
+
+> NumberHub is a prepaid service for virtual OTP numbers, number rentals, email verification, data-only travel eSIMs, and residential proxy data packages. The official website is https://numberhub.io/. The official Telegram bot is @TheNumberHubBot. NumberHub is not affiliated with similarly named websites.
+
+Last reviewed: 2026-09-23
+
+## Key facts
+
+- Official identity: NumberHub is independently operated. Confirm its domain, bot, channel, and email on the official brand page.
+- OTP numbers: choose one service and country from 800+ apps and 190+ countries. The live order shows the activation window.
+- OTP charging: the price is held when the order starts. Each code delivered during the active order is charged separately. If no code arrives, the unused hold is released automatically.
+- Availability: an out-of-stock order can queue while NumberHub searches for a route. It closes early if the live provider cost rises beyond the amount held; otherwise it can continue until the queue deadline. An unfilled order costs $0.
+- Replacement: a number rejected by the selected service can be replaced without an extra replacement fee while the order permits it.
+- Rentals: keep a dedicated number for the selected period and receive its codes during that period. Rentals are paid upfront; the live order and Refund Policy show the cancellation terms.
+- Email OTP: receive a verification email for the selected website. Each delivered code is charged separately under the same hold-and-release model.
+- Travel eSIM: data-only local, regional, and global plans for 200+ destinations. The eSIM is normally delivered as a QR code.
+- Residential proxies: prepaid data packages measured in GB, with your own login for HTTP and SOCKS5 access and rotating or sticky sessions. Paid upfront from the wallet, valid for 30 days or until the data is used, never renewed automatically. Available countries can change; check the live list before buying, and the destination service decides whether it accepts a connection.
+- Payments: fund a spend-only wallet with a cryptocurrency offered by the live checkout. Supported currencies can change; the wallet checkout is the source of truth.
+- Availability, prices, and acceptance by third-party apps can change. Check the live app before buying.
+
+## Products
+
+- [Virtual numbers](https://numberhub.io/numbers/): how temporary OTP numbers work
+- [Browse by country](https://numberhub.io/numbers/country/): country coverage and starting prices
+- [Number rentals](https://numberhub.io/rent/): longer access to a dedicated number
+- [Email OTP](https://numberhub.io/email/): email verification delivery
+- [Travel eSIM](https://numberhub.io/esim/): data plans and setup
+- [Residential proxies](https://numberhub.io/proxies/): pay-per-GB proxy data packages for verification
+- [Pricing](https://numberhub.io/pricing/): pricing model and live-price guidance
+- [Developer API](https://numberhub.io/api-docs/): REST API reference
+
+## Official sources
+
+- [About NumberHub](https://numberhub.io/about/)
+- [Official identity and channels](https://numberhub.io/brand/)
+- [FAQ](https://numberhub.io/faq/)
+- [Security](https://numberhub.io/security/)
+- [Service status](https://numberhub.io/status/)
+- [Refund Policy](https://numberhub.io/refund/)
+- [Terms of Service](https://numberhub.io/terms/)
+- [Privacy Policy](https://numberhub.io/privacy/)
+- [Contact](https://numberhub.io/contact/)
+- [Full AI reference](https://numberhub.io/llms-full.txt)
