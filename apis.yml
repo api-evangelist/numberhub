@@ -2,8 +2,8 @@ aid: numberhub
 name: NumberHub
 image: https://numberhub.io/og.jpg
 description: NumberHub provides a REST API for a prepaid USD wallet offering SMS verification numbers, number rentals, travel eSIM data plans,
-  email OTP services, and residential proxy data packages. The platform enables developers to programmatically order numbers, rent eSIMs, send
-  OTPs via SMS or email, and access proxy endpoints, with pricing and catalog updates reflected in real time. It supports idempotent operations
+  email OTP services, and residential proxy data packages. The platform enables developers to programmatically receive verification SMS and email, rent phone
+  numbers, buy prepaid data-only travel eSIMs, and access proxy endpoints, with pricing and catalog updates reflected in real time. It supports idempotent operations
   via Idempotency-Key and detailed retry semantics for action endpoints.
 url: https://raw.githubusercontent.com/api-evangelist/numberhub/refs/heads/main/apis.yml
 x-type: company
@@ -71,6 +71,17 @@ apis:
 x-submission-notes: SMS verification numbers, rentals, travel eSIMs, email OTP, residential proxies. OpenAPI 3.1 https://numberhub.io/openapi.json
 x-submission-probe: root 200, invented path 404, api-docs 200, OpenAPI 3.1 200 (44 paths)
 x-submitted-by: info@numberhub.io (apis.io/add, 2026-09-28)
+x-correction-request:
+  requested: '2026-10-08'
+  source:
+  - https://github.com/api-evangelist/numberhub/issues/1
+  request: 'hatmast2r (GitHub issue #1): the provider description says "rent eSIMs, send OTPs via SMS or email"; change that part
+    to "receive verification SMS and email, rent phone numbers, and buy prepaid data-only travel eSIMs" -- the supported product
+    flows in https://numberhub.io/api-docs/; the prepaid USD wallet and residential proxy wording can stay.'
+  applied: '2026-10-08'
+  applied_note: 'Verified live 2026-10-08: https://numberhub.io/api-docs/ 200 documents numbers (SMS and email are charge-on-receive:
+    billed when the first code or verification email arrives), number rentals, and eSIM "Travel data" (GET /esim/regions); no
+    outbound-send operation. Description phrase replaced as requested; wallet and residential proxy wording kept.'
 x-enrichment:
   date: '2026-09-28'
   status: enriched
